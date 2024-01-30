@@ -1,0 +1,95 @@
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ font-family: sans-serif;
+}
+.showcase{
+ position: absolute;
+ right: 0;
+ width: 100%;
+ min-height: 100vh;
+ padding: 100px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background: #111;
+ color: aliceblue;
+ z-index: 2;
+}
+.menu{
+ 
+}
+.showcase header{
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ padding: 40px 100px;
+ z-index: 1000;
+}
+.logo{
+ text-transform: uppercase;
+ cursor: pointer;
+}
+.showcase video{
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ opacity: 0.8;
+}
+.text{
+ position: relative;
+ z-index: 10;
+}
+.overlay{
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background:#af6b27;
+ mix-blend-mode:overlay;
+}
+.text h2{
+ font-size: 5em;
+ font-weight: 800;
+ line-height: 1em ;
+ text-transform: uppercase;
+ animation: fromleft 2s ease-in-out;
+}
+p {
+ margin: 10px 0;
+}
+p,h3{
+ animation: fromleft 5s ease-in-out;
+}
+a{
+ text-decoration: none;
+ color: black;
+ background: white;
+ display: inline-block;
+ text-transform: uppercase;
+ padding: 10px;
+ font-weight: 700;
+ transition: all 1s;
+ animation: fromleft 7s ease-in-out;
+}
+a:hover{
+ letter-spacing: 5px;
+ border-bottom: 1px black solid;
+ border-left: 1px black solid;
+ 
+}
+@keyframes fromleft{
+ from{
+  transform: translateX(-100%);
+ }
+ to{
+  transform: translateX(0);
+ }
+
+}
